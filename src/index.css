@@ -19,36 +19,44 @@
   Breakpoints.............................Global responsive breakpoints definitions
 */
 
-/*=======================================
-    COLORS
-=================em;========================*/
-
-/*=======================================
-    TYPOGRAPHY
-=========================================*/
-/* 
-  1. The Poppins font. This is the main font.
-  https://fonts.googleapis.com/css?family=Poppins
-
-  2. The Courier font. This is used for <pre> code.
-  https://fonts.googleapis.com/css?family=Poppins
-*/
-
-/*=======================================
-    BREAKPOINTS
-=========================================*/
-
 :root {
+  /*=======================================
+  COLORS
+=========================================*/
+
+  /*================================
+  Brand Colors
+  ================================*/
+  --gradient-start: #1b3385;
+  --gradient-end: #25c5c9;
+  --primary-bg: #2292b1;
+
+  /*================================
+  Neutral Colors
+  ================================*/
+  --background: #0a0c11;
+  --body-text: #abadb3;
+  --border-color: #313438;
+  --sub-menu-bg: #222;
+  --white: #ffff;
+
+  /*=======================================
+      TYPOGRAPHY
+  =========================================*/
+  /* 
+    1. The Poppins font. This is the main font.
+    https://fonts.googleapis.com/css?family=Poppins
+  
+    2. The Courier font. This is used for <pre> code.
+    https://fonts.googleapis.com/css?family=Poppins
+    */
   --base-font: 20px;
   --primary-font: "Poppins";
   --secondary-font: "Courier-Prime";
-  --background: #0a0c11;
-  --body-text: #abadb3;
-  --sub-menu-bg: #222;
-  --primary-bg: #2292b1;
-  --gradient-start: #1b3385;
-  --gradient-end: #25c5c9;
-  --border-color: #313438;
+
+  /*=======================================
+      TYPOGRAPHY
+  =========================================*/
   --thin: 100;
   --extra-light: 200;
   --light: 300;
@@ -58,8 +66,11 @@
   --bold: 700;
   --extra-bold: 800;
   --heavy: 900;
-  --white: #ffff;
 }
+
+/*=======================================
+    BREAKPOINTS
+=========================================*/
 
 body {
   box-sizing: border-box;
