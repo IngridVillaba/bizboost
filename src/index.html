@@ -3,21 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime" />
     <link rel="stylesheet" href="index.css" />
 
-    <title>Bizboost</title>
+    <title>BizBoost</title>
   </head>
   <body>
-    <div class="hola"></div>
-    .
     <!--Crear elemento <header> que contenga logo, menu y redes sociales
       Con flexbox direccionar horizontalmente
       En menu, agregar <nav>, en la parte de templates se despliegan 3 opciones-->
+    <section>
+      <header>
+        <a href="/" class="logo">BizBoost</a>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="#" class="selection">home</a>
+            </li>
+            <li>
+              <a href="#"
+                >Templates
+                <img src="./img/arrow.svg" alt="Arrow" />
+              </a>
+              <ul class="sub-nav">
+                <li>
+                  <a href="#">Right sidebar</a>
+                </li>
+                <li>
+                  <a href="#">No Sidebar</a>
+                </li>
+                <li>
+                  <a href="#">Style Guide</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social">
+          <li>
+            <a href="/" target="_blank">
+              <img src="./img/Facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="/" target="_blank">
+              <img src="./img/Twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="/" target="_blank">
+              <img src="./img/In.svg" alt="LinkedIn" />
+            </a>
+          </li>
+        </ul>
+      </header>
+    </section>
+
     <!-- <Section> "main"
     h1 "we build digital experiences"
     <p> "we collaborat with smart and creative people to build ..."
     <buttom> "Get started"-->
     <!-- <figcaption> Video  -->
+    <main>
+      <section class="main-box">
+        <h1>We <span class="lowlight">build</span> digital experiences</h1>
+        <article>
+          <p>We collaborate with smart and creative people to build awesome WordPress Full Site Editing Themes.</p>
+        </article>
+        <button class="cta">Get Started</button>
+      </section>
+      <section class="video-box">
+        <figcaption>
+          <video
+            width="100%"
+            controls
+            loop
+            src="https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/video/video-featured.mp4"
+          ></video>
+        </figcaption>
+      </section>
+    </main>
 
     <!--<Section> "Our Services" 
     <figure> computer-world
