@@ -268,11 +268,25 @@ main > * {
   object-fit: cover;
 }
 
+.hero-content {
+  width: 100%;
+}
+
 /*=============================
   OUR-SERVICES
 ================================*/
 .our-services {
   margin: 42px 0;
+}
+
+.our-services-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.headings {
 }
 
 .big-numbers {
@@ -431,10 +445,4 @@ main > * {
   .our-services > * {
     flex: 1;
   }
-  .our-services-layout {
-    padding: 0 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
+}
