@@ -124,6 +124,7 @@ h2 {
   line-height: 1.29em;
   text-transform: capitalize;
   margin-top: 14px;
+  font-weight: var(--semi-bold);
 }
 
 h3 {
@@ -202,6 +203,10 @@ a:hover,
   padding: 0 30px;
 }
 
+/* .blocks * {
+  border: 1px solid var(--body-text);
+} */
+
 header {
   display: flex;
   align-items: center;
@@ -213,7 +218,6 @@ header {
 
 h2 {
   font-size: 24px;
-  font-weight: 700;
 }
 
 .mobile {
@@ -286,9 +290,6 @@ main > * {
   justify-content: center;
 }
 
-.headings {
-}
-
 .big-numbers {
   display: flex;
   flex-direction: column;
@@ -325,6 +326,45 @@ main > * {
 .our-services-cta:hover {
   background: var(--white);
   color: var(--background);
+}
+
+/* ================
+FEATURED CONTENT
+======================*/
+
+.featured-content {
+  text-align: center;
+  margin: 0 0 56px;
+}
+.boxes {
+  display: flex;
+  column-gap: 40px;
+}
+
+.box {
+  flex-direction: column;
+  border: 2px solid var(--border-color);
+  padding: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  width: 352.02px;
+  height: 234.52px;
+}
+
+.button-two {
+  font-family: var(--primary-font);
+  font-weight: var(--normal);
+  font-size: 0.9em;
+  text-decoration: underline;
+  background-color: var(--background);
+  color: var(--body-text);
+  position: relative;
+  border: none;
 }
 
 /*=======================================
