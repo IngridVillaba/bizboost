@@ -132,6 +132,11 @@ h3 {
   font-weight: var(--bold);
 }
 
+h4 {
+  font-size: 1.2em;
+  line-height: 1.72em;
+}
+
 h4,
 h5 {
   font-weight: var(--bold);
@@ -284,6 +289,7 @@ main > * {
 }
 
 .our-services-layout {
+  padding: 0 12%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -336,6 +342,10 @@ FEATURED CONTENT
   text-align: center;
   margin: 0 0 56px;
 }
+
+.featured-content-layout {
+  gap: 44px;
+}
 .boxes {
   display: flex;
   column-gap: 40px;
@@ -355,16 +365,14 @@ FEATURED CONTENT
   width: 352.02px;
   height: 234.52px;
 }
+hr {
+  position: absolute;
+  text-align: start;
+  border: 1px solid var(--gradient-end);
+}
 
-.button-two {
-  font-family: var(--primary-font);
-  font-weight: var(--normal);
-  font-size: 0.9em;
-  text-decoration: underline;
-  background-color: var(--background);
-  color: var(--body-text);
-  position: relative;
-  border: none;
+.box p {
+  font-size: 18px;
 }
 
 /*=======================================
