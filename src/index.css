@@ -309,30 +309,10 @@ main > * {
   justify-content: center;
 }
 
-.our-services-cta {
-  padding: 15px 34.86px 16.08px 35px;
-  display: inline-block;
-  margin-top: 14px;
-  color: var(--white);
-  border-radius: 30px;
-  font-size: 0.9em;
-  font-weight: var(--bold);
-  line-height: 1.6em;
-  background: linear-gradient(
-    90deg,
-    var(--gradient-start) 0%,
-    var(--gradient-end) 100%
-  );
-}
-
-.our-services-cta:hover {
-  background: var(--white);
-  color: var(--background);
-}
-
 /* ================
 FEATURED CONTENT
 ======================*/
+
 .featured-content-layout {
   display: flex;
   flex-direction: column;
@@ -369,9 +349,11 @@ FEATURED CONTENT
 }
 
 .box:hover img {
+  opacity: 0.8;
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .box h4 {
@@ -385,11 +367,179 @@ FEATURED CONTENT
   display: block;
 }
 
-hr {
+.box a {
+  width: 81.975px;
+  font-size: 0.8em;
+  position: relative;
+  border: 0;
+  position: relative;
+  border-radius: 0;
+  padding: 0;
+}
+
+.box a::after {
   position: absolute;
-  text-align: start;
-  border: 1px solid var(--gradient-end);
-  width: 95px;
+  content: "";
+  border-bottom: 2px solid var(--primary);
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -7px;
+}
+
+.boxes {
+  padding-bottom: 42px;
+}
+
+/*================
+Promotional-contact
+|===================  */
+.promotional-contact-layout {
+  text-align: center;
+  padding: 74px 50px;
+  position: relative;
+}
+.promotional-contact-layout img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  z-index: 0;
+  width: 100%;
+}
+
+.promotional-contact h2 {
+  font-weight: var(--medium);
+}
+
+.promotional-contact-layout .promotional-contact {
+  position: relative;
+  z-index: 1;
+}
+
+.promotional-contact h2 {
+  padding: 10px 0;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+/* ================
+footer-section
+==========================*/
+.footer-section-layout {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#email {
+  font-size: 0.7em;
+  padding: 16.1px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 225px;
+}
+
+.email-button {
+  font-size: 0.7em;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 0;
+  padding: 14px 16px 13.7px;
+  margin-left: -7px;
+}
+
+.cta {
+  padding: 0px 0 30px;
+  min-width: max-content;
+}
+
+a:hover,
+.newsletter h4:hover {
+  color: var(--primary);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section-layout:first-child {
+  flex: 1;
+}
+
+.footer-section-layout:last-child {
+  flex: 2;
+}
+
+.newsletter {
+  flex-direction: column;
+}
+
+.newletter h4 {
+  margin-bottom: 21px;
+}
+
+.newsletter-signup h5 {
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  flex-direction: column;
+}
+
+.footer-suport ul {
+  flex-direction: column;
+}
+
+.selected {
+  color: var(--primary);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-social ul {
+  gap: 20px;
+}
+
+.footer-social li {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.65em;
+  border-top: 1px solid var(--border-color);
+}
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
 }
 
 /*=======================================
@@ -483,6 +633,10 @@ hr {
     line-height: 1.72em;
   }
 
+  h2 {
+    font-size: 1.2em;
+  }
+
   h3 {
     font-size: 2.27em;
   }
@@ -495,6 +649,8 @@ hr {
     max-width: 760px;
   }
 
+  /* Our-Services */
+
   .our-services {
     display: flex;
     margin: 131px 0;
@@ -503,8 +659,6 @@ hr {
   .big-numbers {
     flex-direction: row;
     gap: 40px;
-    padding: 0 80px;
-    margin-bottom: 131px;
   }
 
   .big-numbers > * {
@@ -518,5 +672,111 @@ hr {
   .boxes {
     display: flex;
     flex-direction: row;
+    padding-bottom: 89.34px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0px;
+  }
+
+  .box a:hover::after {
+    content: "";
+    border-bottom: 2px solid var(--primary);
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    left: 0;
+    bottom: -7px;
+    transition: all 0.5s ease;
+  }
+
+  /* Promotional-contact */
+  .promotional-contact-layout {
+    text-align: center;
+    padding: 84px 56px;
+    position: relative;
+  }
+
+  .promotional-contact h6 {
+    line-height: 1.44em;
+  }
+
+  .promotional-contact h2 {
+    font-size: 32px;
+    font-weight: var(--semi-bold);
+  }
+
+  /* Footer-Section */
+
+  .footer-content {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: var(--normal);
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    margin-left: -200px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: -100px;
+  }
+
+  .footer-suport {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .links-blocks {
+    display: block;
+  }
+
+  .selected {
+    color: var(--primary);
+  }
+
+  .circle-social {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    left: -11px;
+    top: -10px;
+    position: absolute;
+  }
+
+  .circle-social:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .copyright {
+    flex-direction: row;
+    padding: 28px 56px 28px 56px;
+  }
+
+  .copyright > * {
+    flex: 1;
+  }
+
+  .footer-social {
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 7px;
+  }
+
+  .footer-social ul {
+    margin: 0;
+  }
+
+  .to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
   }
 }
