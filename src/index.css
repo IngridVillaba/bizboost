@@ -356,6 +356,10 @@ FEATURED CONTENT
   overflow: hidden;
 }
 
+figure {
+  overflow: hidden;
+}
+
 .box h4 {
   font-size: 22px;
   margin-top: 35px;
@@ -440,10 +444,6 @@ Promotional-contact
 /* ================
 footer-section
 ==========================*/
-.footer-section-layout {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 #email {
   font-size: 0.7em;
   padding: 16.1px;
@@ -453,7 +453,7 @@ footer-section
   border: 1px solid var(--border-color);
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;
-  width: 225px;
+  width: 171px;
 }
 
 .email-button {
@@ -469,7 +469,6 @@ footer-section
 
 .cta {
   padding: 0px 0 30px;
-  min-width: max-content;
 }
 
 a:hover,
@@ -480,6 +479,7 @@ a:hover,
 .footer-content {
   display: flex;
   flex-direction: column;
+  padding: 20px 30px 0;
 }
 
 .footer-section-layout:first-child {
@@ -533,13 +533,27 @@ a:hover,
   flex-direction: column;
   font-size: 0.65em;
   border-top: 1px solid var(--border-color);
+  padding: 20px 30px 0;
 }
 
-.to-top {
+.float {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 999;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    var(--gradient-start) 0%,
+    var(--gradient-end) 100%
+  );
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 20px;
+  padding: 0px;
 }
 
 /*=======================================
@@ -708,7 +722,7 @@ a:hover,
   /* Footer-Section */
 
   .footer-content {
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-weight: var(--normal);
@@ -773,10 +787,28 @@ a:hover,
     margin: 0;
   }
 
-  .to-top {
+  .float {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 999;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(
+      90deg,
+      var(--gradient-start) 0%,
+      var(--gradient-end) 100%
+    );
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 20px;
+    padding: 0px;
+  }
+  .float:hover {
+    background: var(--white);
+    color: var(--background);
+    transition: all 0.8s ease;
   }
 }
